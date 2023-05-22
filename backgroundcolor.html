@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Different colors effects in background</title>
+     <style>
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:400px;
+        }
+     </style>
+
+</head>
+<body>
+    <div class="container">
+              <button onclick="changecolors()">click me</button>
+    </div>
+    <script>
+        var index=0;
+        function changecolors()
+        {
+              var array=["orange","red","yellow","plum","pink"];
+              document.getElementsByTagName("body")[0].style.background=array[index++];
+              if(index>array.length-1)
+              {
+                index=0;
+              }
+
+        }
+
+
+    </script>
+</body>
+</html>
